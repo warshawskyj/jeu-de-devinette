@@ -1,9 +1,5 @@
 from random import randrange
 
-MAX = 100
-MIN = 0
-quit = False
-
 def demander_quitter():
     while True: #les returns vont sortir de la boucle
         reponse = input("Voulez-vous faire une autre partie (o/n)? ")
@@ -24,6 +20,7 @@ def demander_borne(nom_borne): #demander la borne nom_borne
         else:
             return borne
 
+quit = False
 while not quit:
     print(f"J’ai choisi un nombre au hasard entre {MIN} et {MAX}.\nÀ vous de le deviner...")
     nb_essais = 0
